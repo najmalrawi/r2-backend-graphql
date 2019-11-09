@@ -1,0 +1,23 @@
+{
+  "name": "r2-backend-graphql",
+  "version": "1.0.0",
+  "description": "R2 GraphQL Server",
+  "main": "server.ts",
+  "repository": "https://github.com/najmalrawi/r2-backend-graphql",
+  "author": "Muhammad Najimov <najmalrawi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.7",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "graphql": "^14.5.8",
+    "graphql-yoga": "^1.18.3",
+    "merge-graphql-schemas": "^1.7.3"
+  }
+}
