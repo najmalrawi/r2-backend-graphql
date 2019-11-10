@@ -1,0 +1,27 @@
+type User {
+	pk: Int!
+	branch: Branch!
+	subscriber: Subscriber!
+	password: String!
+	role: Int!
+	firstName: String!
+	lastName: String!
+}
+
+input CreateUserInput {
+	branch: Int!
+	subscriber: Int!
+	password: String!
+	role: Int!
+	firstName: String
+	lastName: String
+}
+
+type Query {
+	user(userPk: Int!): User!
+	users: [User!]!
+}
+
+type Mutation {
+	createUser(input: CreateUserInput): User
+}

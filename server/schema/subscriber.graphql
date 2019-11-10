@@ -1,0 +1,13 @@
+type Subscriber {
+	pk: Int!
+	number: Int!
+	joined: Boolean!
+}
+
+type Query {
+	subscribers(joined: Boolean = NULL): [Subscriber!]!
+}
+
+type Mutation {
+	createSubscriber(numbers: [Int!]): [Subscriber!]
+}

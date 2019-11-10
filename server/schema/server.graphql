@@ -1,3 +1,17 @@
+type AppInfo {
+	name: String!
+}
+
 type Query {
 	version: Float!
+	app: AppInfo
+}
+
+input SetInfoInput {
+	prop: String!
+	val: String
+}
+
+type Mutation {
+	setInfo(input: SetInfoInput): AppInfo
 }
